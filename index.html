@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- navbar -->
+        <div class="navbar">
+            <h1>Dojonary</h1>
+            <button class="search">Search</button>
+            <button class="login" onclick="changeBtn(this)">Login</button>
+        </div>
+
+        <!-- The two boxes that will be flexed -->
+        <div class="flex-box">
+
+            <!-- Definition #1  -->
+            <div class="def">
+                <div class="ninja">
+                    <h2>ninja</h2>
+                    <p>noun</p>
+                    <p>plural: <span class="italic">ninjas</span></p>
+                    <button id="like-btns" onclick="likeBtns(this)">13 likes</button>
+                </div>
+                <div class="description">
+                    <p>A practioner skilled in the <a href="#">Japense</a> art of <a href="#">ninjutsu</a></p>
+                </div>
+
+            </div>
+
+            <!-- Adding your defintion -->
+            <div class="add">
+                <p>Dojonary is defined by <span>YOU</span></p>
+                <button id="add-btn" onclick="removeBtn(this)">Add defintion</button>
+            </div>
+        </div>
+
+        <!-- Definiton #2  -->
+        <div class="def">
+            <div class="ninja">
+                <h2>ninja</h2>
+                <p>noun</p>
+                <p>plural: <span class="italic">ninjas</span></p>
+                <button id="like-btns">37 likes</button>
+            </div>
+            <div class="description">
+                <p>A programmer who breaks down problems with <a href="#">zen</a>-like focus</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
